@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../fonts/vazir.css">
+    <link rel="stylesheet" href="../fonts/Roboto.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_319747.jpg">
+    <script src="https://kit.fontawesome.com/c636cb135b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+     <p class="alert" dir="rtl">error</p>
+    <h1 class="h1__calculator">پروژه اول</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">ماشین حساب</h2>
+    <div class="calculator">
+            <input type="text" class="calculator__input" id="js__calculator__input" readonly  >
+            <div class="calculator__keys">
+                <button class="calculatorKeys__keys7" id="num" onclick="appendTo('7')">7</button>
+                <button class="calculatorKeys__keys8" id="num" onclick="appendTo('8')">8</button>
+                <button class="calculatorKeys__keys9" id="num" onclick="appendTo('9')">9</button>
+                <button class="calculatorKeys__keys+" id="opr" onclick="appendTo('+')">+</button>
+                <button class="calculatorKeys__keys4" id="num" onclick="appendTo('4')">4</button>
+                <button class="calculatorKeys__keys5" id="num" onclick="appendTo('5')">5</button>
+                <button class="calculatorKeys__keys6" id="num" onclick="appendTo('6')">6</button>
+                <button class="calculatorKeys__keys-" id="opr" onclick="appendTo('-')">-</button>
+                <button class="calculatorKeys__keys1" id="num" onclick="appendTo('1')">1</button>
+                <button class="calculatorKeys__keys2" id="num" onclick="appendTo('2')">2</button>
+                <button class="calculatorKeys__keys3" id="num" onclick="appendTo('3')">3</button>
+                <button class="calculatorKeys__keys*" id="opr" onclick="appendTo('*')">&times;</button>
+                <button class="calculatorKeys__keys/" id="opr" onclick="appendTo('/')">&divide;</button>
+                <button class="calculatorKeys__keysC" id="opr" onclick="clearDisplay()">C</button>
+                <button class="calculatorKeys__keys=" id="opr" onclick="caculate()">=</button>
+                <button class="calculatorKeys__keys" id="opr" onclick="appendTo('.')">.</button>
+                <button class="calculatorKeys__keys3" id="num" onclick="appendTo('0')">0</button>
+            </div>
+    </div>
+
+    <br>
+    <h1 class="h1__calculator">پروژه دوم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">ساعت</h2>
+
+
+    <!-- timer => project 2 -->
+    <div class="timer">
+        <h2 class="timer__h2" id="js__timer__h2"></h2>
+    </div> 
+        
+    <!-- converter => project 3 -->
+    <h1 class="h1__calculator">پروژه سوم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">مبدل دما</h2>
+
+    <div class="container__converter">
+        <div class="choose">
+            <select id="converter__select__one">
+                <option value="choose">انتخاب کن</option>
+                <option value="F">فارنهایت</option>
+                <option value="C">سانتیگراد</option>
+            </select>
+            <p class="be">به</p>
+            <select id="converter__select__two">
+                <option value="choose">انتخاب کن</option>
+                <option value="F">فارنهایت</option>
+                <option value="C">سانتیگراد</option>
+            </select>
+        </div>
+        <hr class="dark">
+        <input lang="fa" type="text" id="convert__input__one">
+        <span class="spin">↕</span>
+        <input lang="fa" type="text" id="convert__input__two" readonly>
+        <button onclick="convert()">حساب کردن</button>
+    </div> 
+    <!-- تایمر معکوس-->
+    <h1 class="h1__calculator">پروژه چهارم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">شمارش گر معکوس</h2>
+
+    <div class="timer__container">
+        <p id="timer__container__text">10</p>
+    </div> 
+
+    <h1 class="h1__calculator">پروژه پنجم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">شمارش گر</h2>
+
+    <div class="counter">
+        <h1 class="number">0</h1>
+        <div class="controller">
+            <button class="add">Increase</button>
+            <button class="reset">Reset</button>
+            <button class="mines">Decrease</button>
+        </div>
+    </div>
+
+    <button class="toTop">></button>
+
+    <h1 class="h1__calculator">پروژه ششم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">ویدیو پلیر</h2>
+    
+    <div class="fatherVideoElement">
+        <div class="videoPlayer">
+            <video id="videoPlay" class="videoPlay"  >
+            <source src="../images/معین - کنسرت-360p.mp4"> 
+            your browser has problem
+
+            
+            </video>
+            <input type="range" id="rangTime" value="0" min="0" max="1" step="0.01">
+            <div class="controlls__video">
+                <button id="playPuase" class="playPuase">▶</button>
+            
+                <div class="volumeFather">
+                    <button id="mute"><i class="fas fa-volume-up"></i></button>
+                    <input type="range" id="volume" value="1" min="0" max="1" step="0.01">
+                </div>
+                <button id="full" class="full">⛶</button>
+                <button id="plus5"><i class="fa-solid fa-rotate-right"></i></button>
+                <button id="mines5"><i class="fa-solid fa-rotate-left"></i></button>
+                <button id="sidePlus5"><i class="fa-solid fa-rotate-right"></i></button>
+                <button id="sideMines5"><i class="fa-solid fa-rotate-left"></i></button>
+                <button id="centerPlayPuase">▶</button>
+                <button onclick="nextSlide()" class="nextButton"><i class="fa-solid fa-forward-step"></i></button>
+                <button onclick="prevSlide()" class="prevButton"><i class="fa-solid fa-backward-step"></i></button>
+                <p id="videoTimer">00:00 | 00:00</p>
+            </div>
+        </div>
+        <div class="uploader">
+        <div class="imgUploaderDiv">
+            <img src="../images/uploade.png" alt="" id="uploaderImg">
+        </div>
+        <input type="file"  id="movieAdder" hidden>
+        <label for="movieAdder" class="uplaodeBtn" id="uplaodeBtn">ارسال ویدیو</label>
+        <p class="nameUploader"></p>
+        </div>
+    </div>
+
+    <h1 class="h1__calculator">پروژه هفتم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">موزیک پلیر</h2>
+    <div class="containerMusic">
+
+        <audio  id="music">
+            <source src="../images/music/Moein - Che Sali Beshe Emsal.mp3">
+        </audio>
+
+        <img src="" alt="" id="musicImg" class="musicImg">
+        
+        <p id="musicTime" class="musicTime">00:00 | 00:00</p>
+
+        <input type="range" class="musicRnage" min="0" value="0" id="musicRnage" step="0.01">
+
+        
+
+        <div class="musicVolum">
+
+            <input type="range" class="musicvolume" id="musicvolume" min="0" max="1"  value="1" step="0.01"> 
+
+            <button id="musicMute" class="musicMute"><i class="fas fa-volume-up"></i></button>
+
+        </div>
+        <div class="controlMusic">
+                <button onclick="prevmusic ()" class="muiscprev"><i class="fa-solid fa-backward-step"></i></button>
+                <button id="musicPlayPuase" class="musicPlayPuase">▶</button>
+                <button onclick="nextmusic ()" class="muiscnext"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+    </div>
+    
+
+    <h1 class="h1__calculator">پروژه هشتم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">تودولیست</h2>
+
+
+    <div class="containerToDOList">
+        <div class="inputAbutton">
+            <input type="text" id="toDoListInput" class="toDoListInput" placeholder="تودولیست">
+            <button onclick="toDoListSaver ()" id="toDOListButton" class="toDOListButton">ذخیزه</button>
+        </div>
+        <br>
+        <ul id="containerList">
+        </ul>
+    </div>
+
+    <!-- <p><i class="fa-regular fa-flag"></i></p>
+    <p><i class="fa-solid fa-flag"></i></p> -->
+    <div class="containerAnimation">
+        <div class="group">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+        <div aria-hidden="" class="group">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+    </div>
+
+    <h1 class="h1__calculator">پروژه نهم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">گالری</h2>
+
+    <div class="container__gallery">
+        <div class="gallery">
+
+        </div>
+        
+    </div>
+    <p >favorite</p>
+    <div class="favorites"></div> 
+
+    <h1 class="h1__calculator">پروژه دهم</h1>
+    <hr class="hr__calculator">
+    <h2 class="h2__calculator">سنگ کاغذ قیچی</h2>
+
+
+    <div class="Rock-Paper-Scissors">
+        <div class="score">
+            <h2 id="win">Win : 0 </h2>
+            <h2 id="tie">Tie : 0 </h2>
+            <h2 id="lose">Lose : 0 </h2>
+        </div>
+        <div class="RockPaperScissorsButtons">
+            <button class="Rock" onclick="rockPaperScissors('rock')"><img width="96" height="96" src="https://img.icons8.com/emoji/96/rock-emoji.png" alt="rock-emoji"/></button>
+            <button class="Paper" onclick="rockPaperScissors('paper')"><img width="96" height="96" src="https://img.icons8.com/color/96/paper.png" alt="paper"/></button>
+            <button class="Scissors" onclick="rockPaperScissors('Scissors')"><img width="96" height="96" src="https://img.icons8.com/emoji/96/scissors-emoji.png" alt="scissors-emoji"/></button>
+        </div>
+        
+        <div class="finalScore">
+            <p class="YourChoise"></p>
+            <p class="computerChoies"></p>
+            <p class="final"> </p>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
