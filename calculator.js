@@ -347,9 +347,9 @@ sideMines5.addEventListener("dblclick" , function () {
 ////////////////////ورودی لینک ویدیو
 
 let link = [
-    "../images/معین - کنسرت-360p.mp4",
-    "../images/a331d250-3953-4c2b-8d5f-e3af304fbdc9.mp4",
-    "../images/e65b0cbe-7f73-4f30-986f-310d53633ef5.mp4"
+    "./images/معین - کنسرت-360p.mp4",
+    "./images/a331d250-3953-4c2b-8d5f-e3af304fbdc9.mp4",
+    "./images/e65b0cbe-7f73-4f30-986f-310d53633ef5.mp4"
 ]
 //////////////////// video sources
 let current = 0 ;
@@ -509,16 +509,16 @@ music.addEventListener("timeupdate" , () => {
 
 let musicLink = [
     {name : "Che Sali Beshe Emsal.mp3" ,
-         src : "../images/music/Moein - Che Sali Beshe Emsal.mp3" ,
-          img : "../images/music/معین1.webp"},
+         src : "./images/music/Moein - Che Sali Beshe Emsal.mp3" ,
+          img : "./images/music/معین1.webp"},
 
     {name : "Elaheh Naaz.mp3" ,
-         src : "../images/music/Moein - Elaheh Naaz.mp3" ,
-          img : "../images/music/معین 2.jpg"},
+         src : "./images/music/Moein - Elaheh Naaz.mp3" ,
+          img : "./images/music/معین 2.jpg"},
 
     {name : "Halghe Tala.mp3" ,
-         src : "../images/music/Moein - Halghe Tala.mp3" ,
-          img : "../images/music/tanaz.jfif"}
+         src : "./images/music/Moein - Halghe Tala.mp3" ,
+          img : "./images/music/tanaz.jfif"}
 
 ]
 let musicImg = document.getElementById("musicImg")
@@ -678,49 +678,49 @@ containerAnimation.addEventListener("contexrmenu" , (event) => {
 
 
 let source = [
-    {src : "../images/new Background/alone-night-sky-scenery-4k-wallpaper-uhdpaper.com-536@5@f.jpg" ,
+    {src : "./images/new Background/alone-night-sky-scenery-4k-wallpaper-uhdpaper.com-536@5@f.jpg" ,
          alt : "alone night sky"},
 
-    {src : "../images/new Background/alone-sunset-city-scenery-digital-art-4k-wallpaper-uhdpaper.com-435@5@c.jpg" ,
+    {src : "./images/new Background/alone-sunset-city-scenery-digital-art-4k-wallpaper-uhdpaper.com-435@5@c.jpg" ,
          alt : "alone sunset city"},
 
-    {src : "../images/new Background/anime-visual-arts-room_3840x2160_xtrafondos.com (1).jpg" ,
+    {src : "./images/new Background/anime-visual-arts-room_3840x2160_xtrafondos.com (1).jpg" ,
          alt : "anime visual arts room" },
 
-    {src : "../images/new Background/anime-yakuza-yokai-mask-katana-4k-wallpaper-uhdpaper.com-570@5@h.jpg" ,
+    {src : "./images/new Background/anime-yakuza-yokai-mask-katana-4k-wallpaper-uhdpaper.com-570@5@h.jpg" ,
          alt : "anime yakuza yokai mask katana"},
 
-    {src : "../images/new Background/astronaut-pig_3840x2160_xtrafondos.com.jpg" ,
+    {src : "./images/new Background/astronaut-pig_3840x2160_xtrafondos.com.jpg" ,
          alt : "astronaut pig" },
 
-    {src : "../images/new Background/asus-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg" ,
+    {src : "./images/new Background/asus-rog-republic-of-gamers-logo_3840x2160_xtrafondos.com.jpg" ,
          alt : "asus rog republic of gamers logo" },
 
-    {src : "../images/new Background/bmw-ac-schnitzer-acs8-5k-8k-7000x4669-179.jpg" ,
+    {src : "./images/new Background/bmw-ac-schnitzer-acs8-5k-8k-7000x4669-179.jpg" ,
          alt : "../images/new Background/bmw-ac-schnitzer-acs8-5k-8k-7000x4669-179.jpg" },
 
-    {src : "../images/new Background/cats-sunrise-anime-scenery-4k-wallpaper-uhdpaper.com-597@5@f.jpg"  ,
+    {src : "./images/new Background/cats-sunrise-anime-scenery-4k-wallpaper-uhdpaper.com-597@5@f.jpg"  ,
          alt :"../images/new Background/cats-sunrise-anime-scenery-4k-wallpaper-uhdpaper.com-597@5@f.jpg"  },
 
-    {src : "../images/new Background/city-in-the-abstract-universe_5120x2880_xtrafondos.com.jpg" ,
+    {src : "./images/new Background/city-in-the-abstract-universe_5120x2880_xtrafondos.com.jpg" ,
          alt : "../images/new Background/city-in-the-abstract-universe_5120x2880_xtrafondos.com.jpg"  },
 
-    {src : "../images/new Background/girl-cat-night-city-buildings-scenery-4k-wallpaper-uhdpaper.com-87@5@h.jpg"  ,
+    {src : "./images/new Background/girl-cat-night-city-buildings-scenery-4k-wallpaper-uhdpaper.com-87@5@h.jpg"  ,
          alt : "../images/new Background/girl-cat-night-city-buildings-scenery-4k-wallpaper-uhdpaper.com-87@5@h.jpg"  },
          
-    {src : "../images/new Background/honda-nsx-5k-8k-7241x4634-237.jpg"  ,
+    {src : "./images/new Background/honda-nsx-5k-8k-7241x4634-237.jpg"  ,
          alt : "../images/new Background/honda-nsx-5k-8k-7241x4634-237.jpg"  },
 
-    {src : "../images/new Background/kane-house-dragon-ball_3840x2160_xtrafondos.com.jpg"  ,
+    {src : "./images/new Background/kane-house-dragon-ball_3840x2160_xtrafondos.com.jpg"  ,
          alt : "../images/new Background/kane-house-dragon-ball_3840x2160_xtrafondos.com.jpg"  },
 
-    {src : "../images/new Background/moon-landscape-scenery-minimalist-digital-art-8k-wallpaper-uhdpaper.com-556@5@e.jpg"  ,
+    {src : "./images/new Background/moon-landscape-scenery-minimalist-digital-art-8k-wallpaper-uhdpaper.com-556@5@e.jpg"  ,
          alt : "../images/new Background/moon-landscape-scenery-minimalist-digital-art-8k-wallpaper-uhdpaper.com-556@5@e.jpg"  },
 
-    {src : "../images/new Background/night-scenery-tree-digital-art-4k-wallpaper-uhdpaper.com-531@5@h.jpg"  ,
+    {src : "./images/new Background/night-scenery-tree-digital-art-4k-wallpaper-uhdpaper.com-531@5@h.jpg"  ,
          alt : "../images/new Background/night-scenery-tree-digital-art-4k-wallpaper-uhdpaper.com-531@5@h.jpg"  },
 
-    {src : "../images/new Background/night-sky-scenery-digital-art-4k-wallpaper-uhdpaper.com-12@5@g.jpg"  ,
+    {src : "./images/new Background/night-sky-scenery-digital-art-4k-wallpaper-uhdpaper.com-12@5@g.jpg"  ,
          alt : "../images/new Background/night-sky-scenery-digital-art-4k-wallpaper-uhdpaper.com-12@5@g.jpg"  },
 
     // {src : "../images/new Background/ocean-car-floating-full-moon-scenery-digital-art-4k-wallpaper-uhdpaper.com-664@0@j.jpg"  ,
