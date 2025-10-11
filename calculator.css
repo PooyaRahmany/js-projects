@@ -1,6 +1,8 @@
+@media (min-width:1096px){
 html {
     font-size: 100% ;
     font-family: "vazir" , "Roboto";
+    background-color:  rgb(16, 24, 52);
     
 }
 body {
@@ -1240,4 +1242,5 @@ body {
     gap: 6px ;
     font-family: monospace;
     font-size: 1rem ;
+}
 }

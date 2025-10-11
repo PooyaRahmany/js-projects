@@ -1,0 +1,355 @@
+@media (max-width:1096px){
+html {
+ font-size: 100%;
+ padding :0;
+ margin: 0;
+ background :#303132;
+}
+body {
+ background :#303132;
+}
+.h1__calculator {
+ background: linear-gradient(90deg,#F2994A,#F2C94C);
+ color: transparent;
+ background-clip: text ;
+ font-size:4rem;
+ text-align: center;
+}
+.hr__calculator {
+ width:60%;
+ border: 1px solid orange;
+}
+.h2__calculator {
+ background: linear-gradient(90deg,#F2994A,#F2C94C);
+ color: transparent;
+ background-clip: text ;
+ font-size: 2rem;
+ text-align: center;
+}
+
+.alert {
+ position: fixed ;
+ bottom: 20px ;
+ left :20px ;
+ background: hsla(0, 100%, 70%, 1);
+ min-width: 130px ;
+ padding :5px 10px;
+ text-align: center ;
+ border-left :2px solid red;
+ font-size: 1.4rem ;
+ display: none ;
+ z-index: 1;
+}
+/*calculator*/
+
+.calculator {
+ width: 80% ;
+ background: white ;
+ display: block ;
+ margin: 1.5rem auto ;
+ padding: 10px 10px 30px ;
+ border-radius: 10px ;
+ border:5px solid ;
+ box-shadow : 9px 9px 0px #222;
+}
+.calculator__input {
+ width: 90% ;
+ border: none ;
+ outline: none ;
+ font-size: 3.5rem ;
+ display: block ;
+ margin:1.5rem auto;
+ border-radius:5px ;
+ background :#eee ;
+ font-family: "Roboto", "Noto Sans", Arial, sans-serif !important;
+
+}
+
+.calculator__keys {
+ width: 90% ;
+ display: flex ;
+ align-items: center ;
+ justify-content: center  ;
+ flex-wrap: wrap ;
+ margin: 0 auto ;
+ gap: 5px ;
+}
+.calculator__keys button {
+ width :60px ;
+ height:60px ;
+ font-size : 3rem;
+ font-family: "Roboto";
+ border: none ;
+ border-radius: 10px ;
+}
+#opr {
+ background : #FF9300 ;
+ color :#fff ;
+}
+#opr:hover {
+ background : #FF6C65;
+ 
+}
+#num:hover {
+ background:#FF9;
+}
+button.calculatorKeys__keys__eqaul {
+  width : 120px ;
+ 
+}
+
+/*clock*/
+
+
+.timer {
+  background: #fff ;
+  border: 5px solid #222;
+  box-shadow : 10px 10px 0px #222;
+  padding : 10px ;
+  width:260px;
+  text-align: center;
+  font-weight: 100 ;
+  font-size: 2rem ;
+  margin:5rem auto ;
+  border-radius: 10px ;
+}
+.timer__h2 {
+ background: linear-gradient(90deg,#FF8F00,#FF6300);
+ background-clip: text ;
+ color: transparent;
+}
+
+/*converter*/
+
+.container__converter {
+ background: #fff ;
+ width : 85% ;
+ margin :2rem auto ;
+ display: block ;
+ padding : 10px ;
+ border-radius: 10px;
+ border:5px solid;
+ box-shadow : 9px 9px 0px #222;
+}
+.choose {
+ background: hsla(0, 0%, 97%, 1)  ;
+ display: flex ;
+ align-items: center ;
+ justify-content: space-between;
+ border-radius: 5px ;
+ padding :0px  10px ;
+}
+select {
+ outline: none ;
+ border: 2px solid #F2994A;
+ background:#fff ;
+ color :#f2994a;
+ padding: 5px 15px ;
+ border-radius:5px ;
+ font-size:1.2rem ;
+}
+.be {
+ background :#fff;
+ padding :5px 12px ;
+ border-radius :5px ;
+ border:1px solid #ddd ;
+}
+.dark{
+ width: 70%;
+ border : 1px solid hsla(38, 100%, 50%, 1);
+ margin: 1.5rem auto 1.5rem auto ;
+}
+#convert__input__one {
+ background :#fff;
+ border: 2px solid #f2994a;
+ border-radius: 5px ;
+ font-size:1.5rem ;
+ display:block;
+ margin :1.5rem 0;
+}
+#convert__input__two{
+ background :#fff;
+ border: 2px solid #f2994a;
+ border-radius: 5px ;
+ font-size:1.5rem ;
+ display:block;
+ margin :1.5rem 0;
+}
+.spin {
+ background: #f2994a ;
+ text-align: center ;
+ display: block;
+ width: 27px;
+ padding-top: 1px ;
+ height: 27px ;
+ font-size :1.3rem ;
+ font-weight: 600 ;
+ border-radius:5px;
+ color : #fff ;
+ border-radius: 50%;
+ transition: all ease 100ms;
+}
+.spin:active {
+ rotate: 180deg ;
+ transition: all ease 100ms;
+}
+.converter_button {
+ background :#f2994a ;
+ border:2px solid hsla(38, 100%, 60%, 1);
+ outline: none ;
+ color:#fff;
+ padding :7px 25px;
+ border-radius:5px;
+ font-size :1.3rem ;
+ 
+}
+
+
+/* countDown number */
+
+.timer__container {
+ 
+ display: block ;
+ margin : 7rem auto;
+ 
+}
+#timer__container__text {
+ display: block;
+ margin: 0 auto ;
+ font-size :2rem;
+ text-align: center ;
+ font-weight: 600 ;
+ padding :0;
+ background :#fff;
+ color :#f2994a;
+ width: 220px ;
+ border:2px solid #000;
+ border-radius: 5px ;
+ box-shadow: 8px 8px 0px #222;
+}
+
+/* counter */ 
+
+.counter {
+ width :80% ;
+ background :#fff ;
+ display: flex ;
+ flex-direction: column ;
+ align-items: center ;
+ padding :10px ;
+ margin: 3rem auto ;
+ gap:1.5rem;
+ border-radius :5px;
+ box-shadow :inset -70px -70px hsla(235, 0%, 96%, 1),9px 9px 0px #222;
+ border-radius: 10px;
+ border:5px solid; 
+}
+.number {
+ background : #fff ;
+ border :5px solid #f2994a;
+ width: max-content ;
+ padding:10px 45px 0px;
+ border-radius: 20px ;
+ font-size:6rem;
+ font-weight:100;
+ font-family :monospace;
+}
+.controller {
+ display: flex ;
+ flex-direction :row;
+ width:95% ;
+ background :hsla(235, 0%, 97%, 1);
+ padding :12px 10px ;
+ justify-content: space-evenly ;
+ border-radius :5px ;
+ font-family :monospace;
+ gap:3px ;
+}
+.controller button {
+ border :none ;
+ background :#f2994a;
+ color: #fff;
+ font-weight :500;
+ border-radius: 7px ;
+ padding :5px 6px ;
+ 
+}
+
+/* to Top */
+
+.toTop {
+ position :fixed ;
+ background: #fff ;
+ bottom: 20px;
+ right :20px ;
+ transform :rotate(270deg);
+ border :none ;
+ padding :5px 5px;
+ border-radius :50px;
+ transition: all ease 100ms ;
+ visibility: hidden ;
+}
+.toTop img {
+ width: 40px  ;
+ height :auto;
+}
+
+
+
+/* video Player */
+
+
+.fatherVideoElement{
+ display :flex ;
+ flex-direction: column;
+ width :90% ;
+ margin: 4rem auto;
+ align-items: center ;
+ background: #fff ;
+ padding :10px ;
+ border-radius: 10px;
+ border:5px solid;
+ box-shadow : 9px 9px 0px #000;
+ 
+}
+.videoPlayer {
+ padding :5px ;
+ background :#eee;
+ border-radius:5px ;
+ border :3px solid #f2994a;
+ position: relative ;
+}
+#rangTime {
+ -webkit-appearance: none;
+ appearance: none ;
+ width :90% ;
+ height: 5px ;
+ position: absolute ;
+ background :#fff ;
+ top: 167px ;
+ right: 6%;
+ padding :2px;
+ border-radius:10px;
+}
+.videoPlayer ::-webkit-slider-thumb {
+ appearance:none ;
+ background :#FF8B00; 
+ width :15px ;
+ height:15px ;
+ border-radius :50%;
+}
+.playPuase{
+ background: none;
+  color:orange;
+  border :none ;
+  outline: none ;
+  font-size :1.3rem ;
+  width :30px;
+  border-radius: 50% ;
+  position: absolute ;
+  top: 129px ;
+  left :8px;
+}
+
+
+}

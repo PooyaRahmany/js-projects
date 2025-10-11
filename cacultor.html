@@ -6,9 +6,14 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="../fonts/vazir.css">
     <link rel="stylesheet" href="../fonts/Roboto.css">
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calculator@media.css">
+    <link rel="stylesheet" href="./calculator.css">
     <link rel="icon" href="https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_319747.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/c636cb135b.js" crossorigin="anonymous"></script>
     
 </head>
@@ -32,11 +37,16 @@
                 <button class="calculatorKeys__keys2" id="num" onclick="appendTo('2')">2</button>
                 <button class="calculatorKeys__keys3" id="num" onclick="appendTo('3')">3</button>
                 <button class="calculatorKeys__keys*" id="opr" onclick="appendTo('*')">&times;</button>
-                <button class="calculatorKeys__keys/" id="opr" onclick="appendTo('/')">&divide;</button>
-                <button class="calculatorKeys__keysC" id="opr" onclick="clearDisplay()">C</button>
-                <button class="calculatorKeys__keys=" id="opr" onclick="caculate()">=</button>
-                <button class="calculatorKeys__keys" id="opr" onclick="appendTo('.')">.</button>
+                <button disabled></button>
                 <button class="calculatorKeys__keys3" id="num" onclick="appendTo('0')">0</button>
+                <button disabled></button></button>
+                <button class="calculatorKeys__keys" id="opr" onclick="appendTo('.')">.</button>
+                <button class="calculatorKeys__keysC" id="opr" onclick="clearDisplay()">C</button>
+                <button class="calculatorKeys__keys/" id="opr" onclick="appendTo('/')">&divide;</button>
+                <button class="calculatorKeys__keys__eqaul"  id="opr" onclick="caculate()">=</button>
+                
+                
+               
             </div>
     </div>
 
@@ -74,7 +84,7 @@
         <input lang="fa" type="text" id="convert__input__one">
         <span class="spin">↕</span>
         <input lang="fa" type="text" id="convert__input__two" readonly>
-        <button onclick="convert()">حساب کردن</button>
+        <button class="converter_button" onclick="convert()">حساب کردن</button>
     </div> 
     <!-- تایمر معکوس-->
     <h1 class="h1__calculator">پروژه چهارم</h1>
@@ -98,7 +108,7 @@
         </div>
     </div>
 
-    <button class="toTop">></button>
+    <button class="toTop"><img src="./images/right-arrow.png" alt=""></button>
 
     <h1 class="h1__calculator">پروژه ششم</h1>
     <hr class="hr__calculator">
@@ -107,7 +117,7 @@
     <div class="fatherVideoElement">
         <div class="videoPlayer">
             <video id="videoPlay" class="videoPlay"  >
-            <source src="../images/معین - کنسرت-360p.mp4"> 
+            <source src="./images/معین - کنسرت-360p.mp4"> 
             your browser has problem
 
             
@@ -133,7 +143,7 @@
         </div>
         <div class="uploader">
         <div class="imgUploaderDiv">
-            <img src="../images/uploade.png" alt="" id="uploaderImg">
+            <img src="./images/uploade.png" alt="" id="uploaderImg">
         </div>
         <input type="file"  id="movieAdder" hidden>
         <label for="movieAdder" class="uplaodeBtn" id="uplaodeBtn">ارسال ویدیو</label>
