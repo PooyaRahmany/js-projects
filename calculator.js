@@ -2,19 +2,31 @@
 const alertP = document.querySelector(".alert")
 let display = document.getElementById('js__calculator__input');
 function appendTo(input) {
+    if (display.value.length > 6 )
+    {
+        alertP.style.opacity  =  1
+        alertP.style.display = 'block'
+        alertP.textContent = 'Error'
+        display.value = display.value
+        setTimeout(() => {
+            alertP.style.opacity  = 0 } , 3000)
+        
+    }
+    else {display.value += input ;}
     
-    display.value += input ;
 }
 function clearDisplay (){
     display.value = ""
 }
 function caculate () {
+    
     try {
-        display.value = eval(display.value).toFixed(2) ; 
+        display.value = eval(display.value).toFixed(2); 
     }
     catch (error) {
         console.error('error');
         display.value = "Error"
+        alertP.style.opacity  =  1
         alertP.textContent = "درست بنویس, زشته!"
         alertP.style.display = 'block'
         alertP.classList.replace("alertGreen" , "alert")
@@ -22,6 +34,7 @@ function caculate () {
             alertP.style.opacity  = 0 ;} , 3000)
             result = "Error" ;
     }
+    
 }
 
 //Timer =>  project 2
@@ -57,6 +70,7 @@ function convert () {
     switch(true) {
         case (selectionOne.value === "choose" && selectionTwo.value === "choose") :
             alertP.textContent = "انتخاب کن"
+            alertP.style.opacity  =  1
             alertP.style.display = 'block'
             alertP.classList.replace("alertGreen" , "alert")
             setTimeout(() => {
@@ -116,6 +130,7 @@ function clock () {
     if(distance === 0){
         alertP.textContent = "عیدت مبارک"
         alertP.style.display = "block"
+        alertP.style.opacity  =  1
         alertP.classList.replace("alert" , "alertGreen")
         setTimeout(() => {
             alertP.style.opacity = 0 ;
@@ -156,10 +171,10 @@ toTop.addEventListener('click' , () => {
     });
 })
 document.onscroll = function () {
-    toTop.style.display = "block"
+    toTop.style.visibility = "visible"
     setTimeout(function () {
-        toTop.style.display = "none"
-    },5000)
+        toTop.style.visibility = "hidden"
+    },100000000)
 
 }
 ///////////////VIDEO & VIDEO RANGMENT
@@ -270,15 +285,15 @@ volumeFather.addEventListener("mouseleave", () => {
 const full = document.getElementById("full")
 let isFullscreen = false;
 
-full.addEventListener("click", () => {
+full.onclick = () => {
     if (!document.fullscreenElement) {
         video.requestFullscreen();
-        video.removeAttribute("controls")
+        video.removeAttribute("controls");
     } else {
         document.exitFullscreen();
-        video.removeAttribute("controls")
+        video.setAttribute("controls", "");
     }
-})
+}
 
 //////////////////VOLUME
 

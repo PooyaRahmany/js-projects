@@ -1,0 +1,48 @@
+/* Modern opinionated reset */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Vazir", "Helvetica", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #111;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 600; margin: 0; }
+
+/* Links */
+a { color: inherit; text-decoration: none; }
+a:active, a:hover { text-decoration: underline; }
+
+/* Forms */
+button, input, select, textarea {
+  font: inherit;
+  margin: 0;
+}
+button { cursor: pointer; }
+
+/* Images and media */
+img, svg, video, canvas { display: block; max-width: 100%; height: auto; }
+
+/* Lists */
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+/* Tables */
+table { border-collapse: collapse; width: 100%; }
+
+/* Accessibility focus */
+:focus { outline: none; }
+:focus-visible { outline: 3px solid rgba(21,156,228,0.6); outline-offset: 3px; }
+
+/* Utility: فاصلهٔ پیش‌فرض محتوا از لبهٔ صفحه */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
