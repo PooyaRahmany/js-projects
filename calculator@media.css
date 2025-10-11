@@ -40,6 +40,7 @@ body {
  display: none ;
  z-index: 1;
 }
+
 /*calculator*/
 
 .calculator {
@@ -109,7 +110,7 @@ button.calculatorKeys__keys__eqaul {
   width:260px;
   text-align: center;
   font-weight: 100 ;
-  font-size: 2rem ;
+  font-size: 1.7rem ;
   margin:5rem auto ;
   border-radius: 10px ;
 }
@@ -216,7 +217,7 @@ select {
 #timer__container__text {
  display: block;
  margin: 0 auto ;
- font-size :2rem;
+ font-size :1.7rem;
  text-align: center ;
  font-weight: 600 ;
  padding :0;
